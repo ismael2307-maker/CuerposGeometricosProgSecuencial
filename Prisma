@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+        Scanner x=new Scanner(System.in);
+        double Al,At,Abase,Apo,p,h,Vol;
+        
+        System.out.println("Digite la base(p)");
+        p=x.nextInt();
+        
+        System.out.println("Digite la altura(h)");
+        h=x.nextInt();
+    
+        System.out.println("Digite el apotema de la piramide(Apo)");
+        Apo=x.nextDouble();
+
+        //Formulas de:Area Lateral(Al), Abase(Abase), Area Total(At) y Volumen(Vol).
+         Al=5*(p)*(h);
+         Abase=5*(p)*(Apo)/2;
+         At=Al+2*(Abase);
+         Vol=Abase*h;
+
+         //Resultados.
+         System.out.println("El area lateral es: "+Al+ " Unidades Cuadradas");
+         System.out.println("El area total de la piramide es: "+At+ " Unidades Cuadradas");
+         System.out.println("El volumen de la piramide es: "+Vol+ " Unidades Cubicas");
+
+         x.close();
+    }
+}
